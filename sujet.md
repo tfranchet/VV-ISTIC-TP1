@@ -26,3 +26,12 @@ They observe some variables such as STS (starts a seconds) wich reflect of many 
 The results obtained are he difference between the steady state and the experimental stats on values of variables, if both states are the same, there is no issues, or at least the issue is taken care of by the system.
 Other worldwide organization run this type of test, such as Google, Amazon, Microsoft, Facebook.
 These experiments can be carried to any type of organization by simulating unexpected usages of softwares while watching how many bugs are found, with a tool like sentry. It will prevent the real user to see it.
+
+4. The main advantage of having a formal specification is to have a mathematicly proved architecture, wich means the only possible bugs are from humans.
+It still needs to be tested because it is never free of human made bugs, the implementation still can be failed by developpers.
+
+5. The main advantage of the mechanized specification is forcing developper to be explicit with his asumptions, wich reduce the bugs made by human.
+It helps improving the original formal specification since it's verified by a computer, wich is faster and can easily check for every evolutions made in the future.
+There is also some artifacts that benefits from the mechanized specification, such as an executable type checker and executable interpreter.
+The author verify the specification by running the executables type checker and interpreter.
+This new specification reduce the implementations errors quite a lot, but humans errors are not handable, so the need for testing still exist.
